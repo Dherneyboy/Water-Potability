@@ -38,47 +38,35 @@ The dataset contains features such as:
 
 ---
 
-## ⚙️ Tools & Libraries
+## 🧾 Evaluation Metrics
 
-```python
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score, f1_score, mean_squared_error, mean_absolute_error
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from xgboost import XGBClassifier
-import tensorflow as tf
+- **Accuracy**  
+- **F1-score**  
+- **Mean Squared Error (MSE)**  
+- **Mean Absolute Error (MAE)**  
 
-🧾 Evaluation Metrics
+---
 
-Accuracy
+## 🏆 Results
 
-F1-score
+| Model | Accuracy | F1-score | Notes |
+|--------|-----------|----------|--------|
+| Decision Tree | **65%** | Moderate | ✅ Best performing |
+| Random Forest | 61% | – | – |
+| XGBoost | 59% | – | – |
+| ANN | 58% | – | – |
 
-Mean Squared Error (MSE)
+The **Decision Tree Classifier** achieved the highest accuracy (65%), showing that tree-based models perform relatively well on this dataset.
 
-Mean Absolute Error (MAE)
+---
 
-)
+## 📈 Visualizations
 
-🏆 Results
-Model	Accuracy	F1-score	Notes
-Decision Tree	65%	Moderate	✅ Best performing
-Random Forest	61%	–	–
-XGBoost	59%	–	–
-ANN	58%	–	–
+- Correlation heatmaps  
+- Feature importance plots  
+- Model comparison bar chart  
+- Distribution plots of physicochemical features  
 
-The Decision Tree Classifier achieved the highest accuracy (65%), showing that tree-based models perform relatively well on this dataset.
+---
 
-📈 Visualizations
 
-Correlation heatmaps
-
-Feature importance plots
-
-Model comparison bar chart
-
-Distribution plots of physicochemical features
